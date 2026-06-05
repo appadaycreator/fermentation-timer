@@ -14,7 +14,9 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <title>発酵・漬け物タイマー【無料】Webツール</title>
     <meta name="description" content="ぬか漬け・味噌・ヨーグルト等の発酵食品の最適な発酵時間と温度管理をサポート。登録不要・完全無料でご利用いただけます。ブラウザから無料で使えます。">
     <link rel="canonical" href="https://appadaycreator.com/fermentation-timer/">
-    <link rel="manifest" href="/fermentation-timer/manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="manifest" href="/fermentation-timer/manifest.json">
     <meta property="og:title" content="発酵・漬け物タイマー【無料】Webツール">
     <meta property="og:description" content="ぬか漬け・味噌・ヨーグルト等の発酵食品の最適な発酵時間と温度管理をサポート。登録不要・完全無料でご利用いただけます。">
     <meta property="og:url" content="https://appadaycreator.com/fermentation-timer/">
@@ -42,19 +44,22 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"発酵・漬け物タイマー【無料】Webツールの使い方","step":[{"@type":"HowToStep","position":1,"name":"必要な情報を入力する","text":"画面のフォームやフィールドに必要な情報を入力する"},{"@type":"HowToStep","position":2,"name":"実行ボタンを押す","text":"「実行」「計算」または「確認」ボタンを押して処理を開始する"},{"@type":"HowToStep","position":3,"name":"結果を確認する","text":"表示された結果や情報を詳しく確認する"},{"@type":"HowToStep","position":4,"name":"結果を活用・シェアする","text":"取得した結果を日常生活に活用し、必要に応じてSNSでシェアする"},{"@type":"HowToStep","position":5,"name":"定期的に利用する","text":"変化や進捗に応じて定期的に再利用して継続的に活用する"}]}</script>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: linear-gradient(135deg, #E0E7FF 0%, #F0F4FF 100%); min-height: 100vh; color: #333; line-height: 1.6; }
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; background: #f8fafc; min-height: 100vh; color: #333; line-height: 1.6; }
         .site-header { background: #7c3aed; color: white; padding: 32px 20px; text-align: center; }
         .site-header .emoji { font-size: 52px; margin-bottom: 8px; }
         .site-header h1 { font-size: 24px; font-weight: 700; margin-bottom: 8px; }
         .site-header p { font-size: 14px; opacity: 0.9; }
         .container { max-width: 800px; margin: 0 auto; padding: 16px; }
         .card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 16px; }
-        .btn { background: #7c3aed; color: white; border: none; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: opacity .2s; min-height: 48px; touch-action: manipulation; }
+        .btn { background: #7c3aed; color: white; border: none; padding: 14px 24px; border-radius: 10px; font-size: 16px; font-weight: 600; cursor: pointer; width: 100%; transition: opacity .2s; min-height: 56px; touch-action: manipulation; }
         .btn:hover { opacity: 0.9; }
         .btn:active { transform: scale(0.98); }
         .btn:focus-visible { outline: 3px solid #7c3aed; outline-offset: 3px; }
-        input, select, textarea { width: 100%; padding: 10px 14px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 15px; margin-top: 4px; font-family: inherit; min-height: 44px; }
-        input:focus, select:focus, textarea:focus { outline: none; border-color: #7c3aed; box-shadow: 0 0 0 3px #7c3aed22; }
+        input[type="text"], input[type="number"], input[type="email"], input[type="url"], select, textarea { width: 100%; padding: 12px 14px; border: 1.5px solid #e2e8f0; border-radius: 8px; font-size: 15px; margin-top: 4px; font-family: inherit; min-height: 48px; }
+        input[type="range"] { -webkit-appearance: none; appearance: none; background: #dbeafe; outline: none; }
+        input[type="range"]::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 20px; height: 20px; border-radius: 50%; background: #7c3aed; cursor: pointer; }
+        input[type="range"]::-moz-range-thumb { width: 20px; height: 20px; border-radius: 50%; background: #7c3aed; cursor: pointer; border: none; }
+        input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, select:focus, textarea:focus, input[type="range"]:focus { outline: none; border-color: #7c3aed; box-shadow: 0 0 0 3px #7c3aed22; }
         label { font-size: 13px; font-weight: 600; color: #555; display: block; margin-top: 14px; margin-bottom: 2px; }
         .result { display: none; }
         .result.show { display: block; }
@@ -66,7 +71,8 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
             .site-header h1 { font-size: 20px; }
             .site-header p { display: none; }
             .card { padding: 16px; }
-            .btn { font-size: 15px; padding: 13px 20px; }
+            .btn { font-size: 15px; padding: 14px 20px; min-height: 56px; }
+            input[type="text"], input[type="number"], input[type="email"], input[type="url"], select, textarea { min-height: 48px; padding: 12px 14px; }
             .result-value { font-size: 28px; }
         }
         /* ── サービス固有CSS ── */
@@ -99,13 +105,24 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
     </header>
 
     <main id="main-content" class="container" role="main" aria-label="発酵・漬け物タイマーのメインコンテンツ">
-        <ins class="adsbygoogle" style="display:block;min-height:0;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<nav aria-label="パンくずリスト" style="background:#f8fafc;border-bottom:1px solid #e2e8f0;padding:6px 0;">
+  <div class="container mx-auto px-4">
+    <ol style="display:flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:0.8rem;color:#6b7280;list-style:none;margin:0;padding:0;">
+      <li><a href="https://appadaycreator.com/" style="color:#4b5563;text-decoration:none;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#4b5563'">ホーム</a></li>
+      <li style="color:#9ca3af;">›</li>
+      <li><a href="https://appadaycreator.com/category/productivity/" style="color:#4b5563;text-decoration:none;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#4b5563'">生産性・日常</a></li>
+      <li style="color:#9ca3af;">›</li>
+      <li style="color:#1f2937;">発酵・漬け物タイマーWebツール</li>
+    </ol>
+  </div>
+</nav>
+        <ins class="adsbygoogle" style="display:block;min-height:90px;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>try{try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}}catch(e){}</script>
 
         <div class="card">
           <h2 style="font-size:18px;font-weight:700;margin-bottom:16px;">🫙 発酵タイマー・管理ガイド</h2>
           <label>発酵食品の種類</label>
-          <select id="food">
+          <select id="food" onchange="updateTempPreview()">
             <option value="nukaduke">ぬか漬け</option>
             <option value="yogurt" selected>ヨーグルト</option>
             <option value="amazake">甘酒</option>
@@ -113,21 +130,35 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
             <option value="kimchi">キムチ・発酵野菜</option>
             <option value="sourdough">天然酵母パン（サワードウ）</option>
           </select>
-          <label>室温（℃）</label>
-          <input type="number" id="temp" placeholder="例: 25" min="5" max="45">
-          <label>作る量</label>
-          <select id="quantity">
+          <label style="display:flex;justify-content:space-between;">
+            <span>室温（℃）</span>
+            <span id="tempValue" style="font-weight:700;color:#7c3aed;">40℃</span>
+          </label>
+          <input type="range" id="temp" min="5" max="45" value="40" style="width:100%;height:6px;border-radius:3px;margin-top:8px;" oninput="updateTempDisplay()">
+          <div style="display:flex;gap:12px;font-size:11px;color:#6b7280;margin-top:8px;justify-content:space-between;">
+            <span>🥶 冬(10℃)</span><span>🌸 春秋(20℃)</span><span>🌞 夏(25℃)</span><span>🔥 高温(30℃)</span>
+          </div>
+          <label style="margin-top:14px;">作る量</label>
+          <select id="quantity" onchange="updateTempPreview()">
             <option value="small">少量（お試し・初心者）</option>
             <option value="medium" selected>標準（家族分）</option>
             <option value="large">大量（保存食として）</option>
           </select>
+          <div id="tempPreview" style="background:#f0fdf4;border-radius:8px;padding:12px;margin-top:12px;font-size:13px;color:#16a34a;text-align:center;font-weight:600;display:none;">予想発酵時間: <span id="previewHours">-</span>時間</div>
           <button class="btn" style="margin-top:20px;" onclick="generate()">発酵時間を計算</button>
         </div>
         <div class="result" id="result" style="margin-top:16px;">
           <div class="card">
             <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;color:#7c3aed;">⏱️ 発酵タイムガイド</h3>
             <div id="output"></div>
+            <div style="display:flex;gap:8px;margin-top:12px;" id="timerButtons"></div>
           </div>
+        </div>
+
+        <!-- アクティブなタイマー一覧 -->
+        <div class="card" id="timerSection" style="display:none;margin-top:16px;background:#f8fafc;">
+          <h3 style="font-size:15px;font-weight:700;margin-bottom:12px;color:#7c3aed;">⏱️ アクティブタイマー</h3>
+          <div id="timerList"></div>
         </div>
 
         <!-- 関連サービス -->
@@ -140,8 +171,8 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
             </div>
         </div>
 
-        <ins class="adsbygoogle" style="display:block;min-height:0;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        <ins class="adsbygoogle" style="display:block;min-height:90px;margin:12px 0" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>try{try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}}catch(e){}</script>
 
         <!-- 使い方セクション -->
         <div class="card" style="margin-top:8px;background:#f8fafc;">
@@ -183,7 +214,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         </div>
 
         <!-- SNSシェアCTA -->
-        <div class="card" style="margin-top:8px;text-align:center;background:linear-gradient(135deg,#E0E7FF,#F0F4FF);" role="complementary" aria-label="SNSシェア">
+        <div class="card" style="margin-top:8px;text-align:center;background:#f0f9ff;" role="complementary" aria-label="SNSシェア">
             <p style="font-size:13px;font-weight:600;color:#374151;margin-bottom:10px;">📣 友人・家族にシェアする</p>
             <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap;">
                 <a href="https://twitter.com/intent/tweet?text=%E7%99%BA%E9%85%B5%E3%83%BB%E6%BC%AC%E3%81%91%E7%89%A9%E3%82%BF%E3%82%A4%E3%83%9E%E3%83%BC%20%23無料ツール&url=https%3A%2F%2Fappadaycreator.com%2Ffermentation-timer%2F" target="_blank" rel="noopener" aria-label="発酵・漬け物タイマーをXでシェア" style="background:#1DA1F2;color:white;padding:8px 16px;border-radius:8px;font-size:13px;text-decoration:none;font-weight:600;min-height:44px;display:inline-flex;align-items:center;">𝕏 シェア</a>
@@ -197,7 +228,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         </div>
     </main>
 
-    
+
 <script>
     const FOODS = {
       nukaduke: {
@@ -237,11 +268,41 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         warning:'スターターが完成するまで1週間かかります。最初から焦らず、毎日フィーディングを続けることが成功の鍵です。',
       },
     };
+
+    let currentInputs = null;
+    let timerIntervals = {};
+
+    function calculateFermentationTime(temp) {
+      const food = FOODS[document.getElementById('food').value];
+      let bestTime = food.temps[food.temps.length-1];
+      for(const t of food.temps) {
+        if(temp <= t[0]) { bestTime = t; break; }
+      }
+      const [,hours] = bestTime;
+      const quantity = document.getElementById('quantity').value;
+      const qMult = quantity === 'small' ? 0.8 : quantity === 'large' ? 1.2 : 1;
+      return Math.round(hours * qMult);
+    }
+
+    function updateTempDisplay() {
+      const temp = parseInt(document.getElementById('temp').value);
+      document.getElementById('tempValue').innerText = temp + '℃';
+      updateTempPreview();
+    }
+
+    function updateTempPreview() {
+      const temp = parseInt(document.getElementById('temp').value);
+      const hours = calculateFermentationTime(temp);
+      document.getElementById('previewHours').innerText = hours;
+      document.getElementById('tempPreview').style.display = 'block';
+    }
+
     function getInputs() {
       const temp = parseInt(document.getElementById('temp').value);
       if(!temp || temp < 5 || temp > 45) { alert('室温を5〜45℃の範囲で入力してください'); return null; }
       return { food: document.getElementById('food').value, temp, quantity: document.getElementById('quantity').value };
     }
+
     function buildOutput(inputs) {
       const { food, temp, quantity } = inputs;
       const f = FOODS[food];
@@ -267,10 +328,124 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       <div style="font-size:13px;font-weight:600;color:#374151;margin-bottom:8px;">💡 成功のコツ</div>
       <ul style="padding-left:18px;font-size:13px;color:#475569;line-height:1.9;">${tipsHtml}</ul>`;
     }
-    document.addEventListener('DOMContentLoaded',()=>{});
+
+    function startTimer() {
+      if(!currentInputs) return;
+      const { food, temp, quantity } = currentInputs;
+      const f = FOODS[food];
+      let bestTime = f.temps[f.temps.length-1];
+      for(const t of f.temps) {
+        if(temp <= t[0]) { bestTime = t; break; }
+      }
+      const [,hours] = bestTime;
+      const qMult = quantity === 'small' ? 0.8 : quantity === 'large' ? 1.2 : 1;
+      const adjustedHours = Math.round(hours * qMult);
+
+      const timerId = 'timer_' + Date.now();
+      const startTime = Date.now();
+      const endTime = startTime + adjustedHours * 3600000;
+
+      const timerData = {
+        id: timerId,
+        food: food,
+        startTime: startTime,
+        durationHours: adjustedHours,
+        endTime: endTime
+      };
+
+      let timers = JSON.parse(localStorage.getItem('fermentationTimers') || '[]');
+      timers.push(timerData);
+      localStorage.setItem('fermentationTimers', JSON.stringify(timers));
+
+      renderTimers();
+      showTimerSection();
+    }
+
+    function renderTimers() {
+      let timers = JSON.parse(localStorage.getItem('fermentationTimers') || '[]');
+      timers = timers.filter(t => t.endTime > Date.now());
+      localStorage.setItem('fermentationTimers', JSON.stringify(timers));
+
+      const timerList = document.getElementById('timerList');
+      timerList.innerHTML = '';
+
+      if(timers.length === 0) {
+        document.getElementById('timerSection').style.display = 'none';
+        return;
+      }
+
+      timers.forEach(timer => {
+        const remaining = Math.max(0, timer.endTime - Date.now());
+        const hours = Math.floor(remaining / 3600000);
+        const mins = Math.floor((remaining % 3600000) / 60000);
+        const food = FOODS[timer.food];
+
+        const timerEl = document.createElement('div');
+        timerEl.style.cssText = 'background:white;border:1px solid #e2e8f0;border-radius:8px;padding:12px;margin-bottom:8px;';
+        timerEl.innerHTML = `
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div style="font-size:13px;font-weight:600;color:#374151;">${food.emoji} ${food.name}</div>
+              <div style="font-size:24px;font-weight:700;color:#7c3aed;margin:4px 0;">${hours}h ${mins}m</div>
+              <div style="font-size:11px;color:#6b7280;">開始: ${new Date(timer.startTime).toLocaleTimeString('ja-JP',{hour:'2-digit',minute:'2-digit'})}</div>
+            </div>
+            <button style="background:#fee2e2;color:#dc2626;border:none;padding:8px 12px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;" onclick="deleteTimer('${timer.id}')">削除</button>
+          </div>
+        `;
+        timerList.appendChild(timerEl);
+      });
+    }
+
+    function deleteTimer(timerId) {
+      let timers = JSON.parse(localStorage.getItem('fermentationTimers') || '[]');
+      timers = timers.filter(t => t.id !== timerId);
+      localStorage.setItem('fermentationTimers', JSON.stringify(timers));
+      renderTimers();
+    }
+
+    function showTimerSection() {
+      document.getElementById('timerSection').style.display = 'block';
+    }
+
+    function startTimerUpdateInterval() {
+      setInterval(() => {
+        renderTimers();
+      }, 10000);
+    }
+
+    function restoreInputs() {
+      const saved = localStorage.getItem('fermentationInputs');
+      if(saved) {
+        const { food, temp, quantity } = JSON.parse(saved);
+        document.getElementById('food').value = food;
+        document.getElementById('temp').value = temp;
+        document.getElementById('quantity').value = quantity;
+        updateTempDisplay();
+      } else {
+        updateTempDisplay();
+      }
+    }
+
+    function saveInputs() {
+      const inputs = getInputs();
+      if(inputs) localStorage.setItem('fermentationInputs', JSON.stringify(inputs));
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      restoreInputs();
+      document.getElementById('food').addEventListener('change', saveInputs);
+      document.getElementById('temp').addEventListener('change', saveInputs);
+      document.getElementById('quantity').addEventListener('change', saveInputs);
+      renderTimers();
+      startTimerUpdateInterval();
+    });
+
     function generate() {
       const inputs = getInputs(); if(!inputs) return;
+      currentInputs = inputs;
+      saveInputs();
       document.getElementById('output').innerHTML = buildOutput(inputs);
+      document.getElementById('timerButtons').innerHTML = `<button class="btn" style="margin:0;flex:1;background:#16a34a;" onclick="startTimer()">⏱️ タイマー開始</button>`;
       document.getElementById('result').classList.add('show');
       document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
     }
@@ -311,6 +486,12 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
         | <a href="contact.html" style="color:white;">お問い合わせ</a></p>
         <p style="margin-top:4px;font-size:11px;opacity:0.6;">最終更新: 2026年5月 | 本サービスはアフィリエイト広告を掲載しています（A8.net/Amazon）</p>
         <p style="margin-top:6px;">© 2026 AppADayCreator. All services are free.</p>
-    </footer>
+    <div style="background:linear-gradient(135deg,#1e3a5f,#2563eb);padding:16px 12px;text-align:center;margin-top:12px;">
+  <p style="color:#e0e7ff;font-size:12px;font-weight:600;margin:0 0 4px;">運営：AppADayCreator / Tech&amp;Brace</p>
+  <p style="color:#cbd5e1;font-size:11px;margin:0 0 10px;">累計399個のWebサービスをAI駆動で開発し、現在361件以上を公開・運用しています。
+AI導入・業務自動化・Webサービス開発のご相談はこちら。</p>
+  <a href="https://tech-and-brace.com/ai-automation?utm_source=appadaycreator&utm_medium=footer&utm_campaign=b2b_cta" target="_blank" rel="noopener" onclick="if(typeof gtag==='function'){gtag('event','b2b_cta_click',{source_page:window.location.pathname,cta_position:'footer',tool_category:document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a')?document.querySelector('[aria-label=\"パンくずリスト\"] li:nth-child(3) a').innerText:'general',destination:'https://tech-and-brace.com/ai-automation'})}" style="display:inline-block;background:#fff;color:#1e3a5f;font-size:11px;font-weight:700;padding:6px 16px;border-radius:20px;text-decoration:none;">法人・B2B相談はこちら →</a>
+</div>
+</footer>
 </body>
 </html>
