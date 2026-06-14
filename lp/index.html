@@ -32,40 +32,34 @@ body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;backgroun
 @media(max-width:768px){.lp-nav{display:none}.lp-logo-sub{display:none}}
 
 /* ── HERO ── */
-.hero{position:relative;min-height:580px;display:flex;align-items:center;overflow:hidden;background:#FFFDF7}
+.hero{position:relative;min-height:560px;display:flex;align-items:center;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background-image:url('../assets/photos/photo_01.jpg');background-size:cover;background-position:center}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,253,247,.98) 0%,rgba(255,253,247,.95) 38%,rgba(255,253,247,.78) 56%,rgba(255,253,247,.38) 80%,rgba(255,253,247,.1) 100%)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,30,15,.75) 0%,rgba(20,30,15,.4) 60%,rgba(20,30,15,.15) 100%)}
 .hero-inner{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;width:100%}
 .hero-content{}
-.hero-eyebrow{font-size:13px;color:#5C8A5A;font-weight:600;margin-bottom:12px;letter-spacing:.05em}
-.hero-h1{font-size:clamp(26px,4vw,42px);font-weight:900;color:#1A2E1A;line-height:1.25;margin-bottom:16px}
-.hero-h1 span{color:#5C8A5A}
-.hero-desc{font-size:14px;color:#555;line-height:1.8;margin-bottom:24px}
-.hero-stats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-.hero-stat{background:#fff;border:1.5px solid #D4EBD4;border-radius:10px;padding:10px 16px;text-align:center;color:#1A2E1A;box-shadow:0 2px 8px rgba(92,138,90,.1)}
-.hero-stat-val{font-size:17px;font-weight:800;display:block;color:#5C8A5A}
-.hero-stat-label{font-size:10px;color:#666}
+.hero-eyebrow{font-size:13px;color:#A8D5A0;font-weight:600;margin-bottom:12px;letter-spacing:.05em}
+.hero-h1{font-size:clamp(26px,4vw,42px);font-weight:900;color:#fff;line-height:1.25;margin-bottom:16px}
+.hero-h1 span{color:#86EFAC}
+.hero-desc{font-size:14px;color:#D1F5C9;line-height:1.8;margin-bottom:24px}
+.hero-stats{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px}
+.hero-stat{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:8px;padding:8px 14px;text-align:center;color:#fff}
+.hero-stat-val{font-size:18px;font-weight:800;display:block}
+.hero-stat-label{font-size:10px;opacity:.85}
 .hero-cta-wrap{display:flex;flex-direction:column;gap:8px;align-items:flex-start}
-.hero-btn{display:inline-flex;align-items:center;gap:8px;background:#D97706;color:#fff;text-decoration:none;padding:16px 32px;border-radius:12px;font-size:17px;font-weight:800;transition:transform .15s,opacity .15s;box-shadow:0 6px 20px rgba(217,119,6,.35)}
+.hero-btn{display:inline-flex;align-items:center;gap:8px;background:#D97706;color:#fff;text-decoration:none;padding:16px 32px;border-radius:12px;font-size:17px;font-weight:800;transition:transform .15s,opacity .15s}
 .hero-btn:hover{transform:translateY(-2px);opacity:.95}
-.hero-btn-note{font-size:11px;color:#888}
-.hero-mockup{display:flex;justify-content:center;align-items:center}
-.hero-mockup-card{background:#fff;border-radius:20px;padding:22px;width:100%;max-width:340px;box-shadow:0 20px 60px rgba(0,0,0,.14);border:1px solid #E5F0E5}
-.mockup-label{font-size:11px;color:#777;margin-bottom:8px;font-weight:600;letter-spacing:.04em}
-.mockup-food-row{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.hero-btn-note{font-size:11px;color:#A8D5A0}
+.hero-mockup{display:flex;justify-content:center}
+.hero-mockup-card{background:rgba(255,255,255,.95);border-radius:20px;padding:20px;width:100%;max-width:320px;box-shadow:0 20px 60px rgba(0,0,0,.3)}
+.mockup-label{font-size:11px;color:#777;margin-bottom:8px}
+.mockup-food-row{display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap}
 .mockup-food-chip{background:#F0F7EE;border:1.5px solid #5C8A5A;border-radius:20px;padding:4px 10px;font-size:11px;color:#5C8A5A;font-weight:600}
 .mockup-food-chip.active{background:#5C8A5A;color:#fff}
-.mockup-temp-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
-.mockup-temp-label{font-size:10px;color:#888;font-weight:600}
-.mockup-temp-val{font-size:15px;font-weight:800;color:#D97706}
-.mockup-temp-slider{height:6px;background:#E5F0E5;border-radius:3px;margin-bottom:14px;position:relative}
-.mockup-temp-fill{height:100%;width:38%;background:linear-gradient(90deg,#5C8A5A,#86EFAC);border-radius:3px}
-.mockup-ring-wrap{text-align:center;margin:4px 0 12px}
-.mockup-ring{width:136px;height:136px;margin:0 auto;position:relative}
+.mockup-ring-wrap{text-align:center;margin:12px 0}
+.mockup-ring{width:120px;height:120px;margin:0 auto;position:relative}
 .mockup-ring svg{width:100%;height:100%}
-.mockup-ring-time{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:800;color:#5C8A5A;flex-direction:column}
-.mockup-ring-sublabel{font-size:10px;color:#888;font-weight:400;margin-top:2px}
-.mockup-info{font-size:11px;color:#555;text-align:center;padding:8px 0;border-top:1px solid #F0F0F0;margin-top:4px}
+.mockup-ring-time{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:800;color:#5C8A5A}
+.mockup-info{font-size:11px;color:#555;text-align:center}
 .mockup-info strong{color:#D97706}
 @media(max-width:768px){
   .hero-inner{grid-template-columns:1fr}
@@ -246,27 +240,23 @@ body{font-family:'Hiragino Kaku Gothic ProN','Noto Sans JP',sans-serif;backgroun
     </div>
     <div class="hero-mockup">
       <div class="hero-mockup-card">
-        <div class="mockup-label">🫙 食材を選ぶ</div>
+        <div class="mockup-label">食材を選ぶ</div>
         <div class="mockup-food-row">
           <span class="mockup-food-chip active">ぬか漬け</span>
           <span class="mockup-food-chip">味噌</span>
           <span class="mockup-food-chip">ヨーグルト</span>
           <span class="mockup-food-chip">塩麹</span>
           <span class="mockup-food-chip">甘酒</span>
+          <span class="mockup-food-chip">納豆</span>
         </div>
-        <div class="mockup-temp-row">
-          <span class="mockup-temp-label">🌡️ 現在の温度</span>
-          <span class="mockup-temp-val">18.0℃</span>
-        </div>
-        <div class="mockup-temp-slider"><div class="mockup-temp-fill"></div></div>
         <div class="mockup-ring-wrap">
           <div class="mockup-ring">
-            <svg viewBox="0 0 136 136">
-              <circle cx="68" cy="68" r="56" fill="none" stroke="#E5F0E5" stroke-width="10"/>
-              <circle cx="68" cy="68" r="56" fill="none" stroke="#5C8A5A" stroke-width="10"
-                stroke-dasharray="351.9" stroke-dashoffset="87.9" stroke-linecap="round" transform="rotate(-90 68 68)"/>
+            <svg viewBox="0 0 120 120">
+              <circle cx="60" cy="60" r="50" fill="none" stroke="#E5F0E5" stroke-width="10"/>
+              <circle cx="60" cy="60" r="50" fill="none" stroke="#5C8A5A" stroke-width="10"
+                stroke-dasharray="251.3" stroke-dashoffset="62.8" stroke-linecap="round" transform="rotate(-90 60 60)"/>
             </svg>
-            <div class="mockup-ring-time">08:45<span class="mockup-ring-sublabel">残り時間</span></div>
+            <div class="mockup-ring-time">08:45</div>
           </div>
         </div>
         <div class="mockup-info">完了予定時刻 <strong>今日 16:30頃</strong></div>
