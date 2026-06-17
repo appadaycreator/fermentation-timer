@@ -590,25 +590,34 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
   <div class="faq-inner">
     <h2 class="faq-title">よくある質問</h2>
     <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">このタイマーは無料で使えますか？</div>
-      <div class="faq-a">はい、完全無料・登録不要です。ブラウザからアクセスするだけですぐにご利用いただけます。アプリのインストールも不要です。</div>
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">温度はなぜ発酵時間に大きく影響するのですか？</div>
+      <div class="faq-a">発酵食品を作る乳酸菌・酵母・麹菌などの微生物は温度に敏感です。一般的に10℃上がると酵素活性が2倍になる「Q10の法則」があり、夏の30℃と冬の10℃では発酵速度が4倍以上変わることもあります。例えばヨーグルトは40〜45℃の最適温度で4〜8時間かかりますが、25℃程度では16〜24時間以上必要です。ぬか漬けも夏は1日・冬は2〜3日と季節で大きく変わります。本ツールは設定温度に応じて推奨発酵時間を補正して表示します。食材の安全のため、特に夏は冷蔵庫発酵も検討してください。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">ぬか漬けの適切な発酵時間はどのくらいですか？</div>
+      <div class="faq-a">ぬか漬けの発酵時間は野菜の種類・サイズ・室温によって大きく異なります。目安として夏（25〜30℃）ではきゅうりが8〜12時間、大根・にんじんが12〜18時間、なすが8〜12時間です。冬（10〜15℃）ではそれぞれ2〜3倍の時間が必要になります。初心者のうちは「浅漬け」気味に仕上げて試食し、自分好みの漬け時間を把握するのがコツです。塩分濃度や野菜の切り方でも大きく変わるため、本ツールで時間を管理しながら調整してみてください。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">複数の発酵食品を同時に管理できますか？</div>
-      <div class="faq-a">はい、複数のタイマーを同時に設定・管理できます。ぬか漬けを仕込みながらヨーグルトも作る、といった並行管理が可能です。</div>
+      <div class="faq-a">はい、複数のタイマーを同時に設定・管理できます。例えばぬか漬けを仕込みながらヨーグルトを作り、同時に塩麹を熟成させるといった並行管理が可能です。それぞれに仕込み日時・食材・温度・目標時間を設定でき、残り時間が一目で分かります。ブラウザ通知を許可しておくと完成時刻にアラートを受け取れます。</div>
     </div>
     <div class="faq-item">
       <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">ブラウザを閉じてもタイマーは続きますか？</div>
-      <div class="faq-a">タイマーデータはLocalStorageに保存されるため、ページを再度開くと経過時間を反映した残り時間が表示されます。ブラウザ通知を許可すれば完成時刻にアラートを受け取れます。</div>
+      <div class="faq-a">タイマーデータはLocalStorage（ブラウザ内の記憶領域）に保存されるため、ページを再度開くと仕込み開始時刻から経過した時間を計算した残り時間が表示されます。ただしバックグラウンドでタイマーが動き続けるわけではなく、再度ページを開いたときに計算が行われます。ブラウザ通知を許可しておくと、完成予定時刻に通知が届く場合があります（ブラウザの機能に依存します）。</div>
     </div>
     <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">温度はなぜ重要なのですか？</div>
-      <div class="faq-a">発酵は微生物の活動によるため、温度が上がると活性が高まり発酵が早くなります。逆に低温では時間がかかります。同じ食材でも温度次第で発酵時間が2〜3倍異なることもあります。</div>
+      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">手作り発酵食品の衛生・安全管理で注意すべき点は？</div>
+      <div class="faq-a">発酵食品の手作りでは衛生管理が最も重要です。①使う器具・容器を熱湯消毒またはアルコール消毒する、②手をよく洗う、③食材に異臭・異色・粘り気が出た場合は廃棄する、④特に夏場は高温多湿で腐敗菌が繁殖しやすいため冷蔵庫発酵も検討する、⑤ボツリヌス菌リスクがあるはちみつを1歳未満の乳児に与えない（甘酒・発酵食品への添加も含む）、などの点に注意してください。本ツールはあくまで時間管理の参考ツールです。食中毒の予防には適切な温度管理と衛生管理を徹底してください。</div>
     </div>
-    <div class="faq-item">
-      <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">記録データはどこに保存されますか？</div>
-      <div class="faq-a">お使いのデバイスのブラウザ内（LocalStorage）にのみ保存されます。外部サーバーには送信されないためプライバシーは完全に保護されます。</div>
-    </div>
+  </div>
+</section>
+
+<section class="container" style="padding:0 16px 20px">
+  <div style="background:#f0fdf4;border:1px solid #86efac;border-radius:12px;padding:16px 20px">
+    <h3 style="font-size:14px;font-weight:700;color:#166534;margin-bottom:8px">🍶 このツールについて</h3>
+    <p style="font-size:13px;color:#166534;line-height:1.85;margin-bottom:8px">「発酵タイマー」はAppADayCreatorが提供する無料Webツールです。ヨーグルト・ぬか漬け・味噌・塩麹・甘酒・納豆・キムチなど代表的な発酵食品の仕込み時間を、設定温度に応じて自動補正して管理します。</p>
+    <p style="font-size:13px;color:#166534;line-height:1.85;margin-bottom:8px">発酵の速度は温度に大きく左右されます。本ツールは各発酵食品の最適温度と推奨発酵時間の目安をもとに、設定された室温での補正時間を提示します。仕込み日時と完成予定時刻を記録できるため、発酵の進行を見える化できます。</p>
+    <p style="font-size:13px;color:#166534;line-height:1.85">すべての処理はブラウザ内で完結し、入力した情報が外部サーバーに送信されることはありません。登録・インストール不要でご利用いただけます。</p>
   </div>
 </section>
 
@@ -618,6 +627,142 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
   <h2>今日から始める、手作り発酵ライフ。</h2>
   <p class="bottom-cta-sub">ぬか漬け・味噌・ヨーグルト・塩麹・甘酒・納豆に対応</p>
   <a href="#tool-main" class="bottom-cta-btn">今すぐ計算する →</a>
+</section>
+
+<!-- FERMENTATION KNOWLEDGE -->
+<section class="container" style="padding:0 16px 20px">
+  <div style="background:#fff;border-radius:12px;padding:16px 20px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+    <h2 style="font-size:16px;font-weight:700;color:#333;margin-bottom:12px">🍶 発酵食品の種類と基礎知識</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px">
+      <div style="background:#f0fdf4;border-radius:8px;padding:10px">
+        <p style="font-size:13px;font-weight:700;color:#166534;margin:0 0 4px">ヨーグルト</p>
+        <p style="font-size:12px;color:#374151;line-height:1.6;margin:0">最適温度40〜45℃。乳酸菌が乳糖を発酵させて乳酸を生成し固まります。ヨーグルトメーカー使用で4〜8時間が目安です。</p>
+      </div>
+      <div style="background:#fef9c3;border-radius:8px;padding:10px">
+        <p style="font-size:13px;font-weight:700;color:#854d0e;margin:0 0 4px">ぬか漬け</p>
+        <p style="font-size:12px;color:#374151;line-height:1.6;margin:0">20〜25℃が最適。乳酸菌・酵母が複合発酵します。夏1日・冬2〜3日が目安。毎日かき混ぜが必要です。</p>
+      </div>
+      <div style="background:#fdf4ff;border-radius:8px;padding:10px">
+        <p style="font-size:13px;font-weight:700;color:#6b21a8;margin:0 0 4px">塩麹・醤油麹</p>
+        <p style="font-size:12px;color:#374151;line-height:1.6;margin:0">60℃の低温発酵で6〜8時間（ヨーグルトメーカー）、常温25℃では1〜2週間かかります。麹菌の酵素が旨味を生みます。</p>
+      </div>
+      <div style="background:#fff1f2;border-radius:8px;padding:10px">
+        <p style="font-size:13px;font-weight:700;color:#9f1239;margin:0 0 4px">甘酒（米麹）</p>
+        <p style="font-size:12px;color:#374151;line-height:1.6;margin:0">55〜60℃で8〜10時間が目安。アミラーゼ酵素が米のデンプンを糖に分解します。「飲む点滴」とも呼ばれる栄養価の高さが特徴です。</p>
+      </div>
+    </div>
+    <div style="border-top:1px solid #e5e7eb;padding-top:10px">
+      <h3 style="font-size:14px;font-weight:700;color:#333;margin-bottom:8px">発酵が上手くいかないときのチェックポイント</h3>
+      <ul style="font-size:13px;color:#374151;line-height:2;margin:0;padding-left:16px">
+        <li>温度が低すぎる → 発酵が遅い（温かい場所に移す）</li>
+        <li>塩分が多すぎる → 微生物が抑制される（塩分を確認）</li>
+        <li>酸っぱすぎる → 発酵しすぎ（時間を短縮する）</li>
+        <li>異臭がする → 雑菌混入の可能性（容器を消毒し直す）</li>
+        <li>固まらない（ヨーグルト）→ 温度不足か菌が死滅している</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- TIPS SECTION -->
+<section class="container" style="padding:0 16px 20px">
+  <div style="background:#fff;border-radius:12px;padding:16px 20px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+    <h2 style="font-size:16px;font-weight:700;color:#333;margin-bottom:12px">🌡️ 温度別・発酵時間の目安一覧</h2>
+    <div style="overflow-x:auto;margin-bottom:12px">
+      <table style="width:100%;border-collapse:collapse;font-size:12px">
+        <thead>
+          <tr style="background:#f0fdf4">
+            <th style="padding:8px;text-align:left;border:1px solid #d1fae5">発酵食品</th>
+            <th style="padding:8px;text-align:center;border:1px solid #d1fae5">最適温度</th>
+            <th style="padding:8px;text-align:center;border:1px solid #d1fae5">低温時（10℃）</th>
+            <th style="padding:8px;text-align:center;border:1px solid #d1fae5">最適時</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="padding:8px;border:1px solid #d1fae5;font-weight:700">ヨーグルト</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">40〜45℃</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">24〜48時間</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">4〜8時間</td>
+          </tr>
+          <tr style="background:#f9fafb">
+            <td style="padding:8px;border:1px solid #d1fae5;font-weight:700">ぬか漬け（きゅうり）</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">20〜25℃</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">2〜3日</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">8〜12時間</td>
+          </tr>
+          <tr>
+            <td style="padding:8px;border:1px solid #d1fae5;font-weight:700">甘酒（米麹）</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">55〜60℃</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">発酵不可</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">6〜10時間</td>
+          </tr>
+          <tr style="background:#f9fafb">
+            <td style="padding:8px;border:1px solid #d1fae5;font-weight:700">塩麹</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">60℃（ヨーグルトメーカー）</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">—</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">6〜8時間</td>
+          </tr>
+          <tr>
+            <td style="padding:8px;border:1px solid #d1fae5;font-weight:700">豆乳ヨーグルト</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">40〜45℃</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">24〜48時間</td>
+            <td style="padding:8px;text-align:center;border:1px solid #d1fae5">8〜12時間</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="font-size:12px;color:#6b7280;line-height:1.7">※上記は目安です。材料・菌の状態・塩分濃度などにより大きく異なります。初回は様子を見ながら調整してください。</p>
+    <div style="background:#fef9c3;border-radius:8px;padding:10px;margin-top:12px">
+      <p style="font-size:13px;font-weight:700;color:#854d0e;margin:0 0 6px">💡 発酵食品を安全に楽しむために</p>
+      <p style="font-size:12px;color:#374151;line-height:1.7;margin:0">発酵食品の手作りは、正しい温度管理・衛生管理を守れば安全に楽しめます。材料が異臭・異色・粘り気を示した場合は食べずに廃棄してください。特に夏場は高温多湿で腐敗菌も繁殖しやすいため、冷蔵庫での低温発酵もご検討ください。ヨーグルトメーカーや甘酒メーカーを使うと温度を一定に保ちやすく、失敗が少なくなります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- BEGINNER GUIDE -->
+<section class="container" style="padding:0 16px 20px">
+  <div style="background:#fff;border-radius:12px;padding:16px 20px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+    <h2 style="font-size:15px;font-weight:700;color:#333;margin-bottom:10px">🔰 初めての発酵食品づくり ステップガイド</h2>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      <div style="background:#f0fdf4;border-radius:8px;padding:10px 12px;display:flex;gap:10px;align-items:flex-start">
+        <span style="font-size:18px;min-width:28px">①</span>
+        <div>
+          <p style="font-size:13px;font-weight:700;color:#166534;margin:0 0 3px">ヨーグルトからはじめる</p>
+          <p style="font-size:12px;color:#374151;line-height:1.65;margin:0">ヨーグルトは材料が牛乳と市販ヨーグルト（種菌）だけ。ヨーグルトメーカーがなければ保温ポットでも代用できます。40〜45℃を4〜8時間維持するだけで完成し、失敗しにくく初心者に最適です。</p>
+        </div>
+      </div>
+      <div style="background:#fef9c3;border-radius:8px;padding:10px 12px;display:flex;gap:10px;align-items:flex-start">
+        <span style="font-size:18px;min-width:28px">②</span>
+        <div>
+          <p style="font-size:13px;font-weight:700;color:#854d0e;margin:0 0 3px">次に塩麹・甘酒に挑戦</p>
+          <p style="font-size:12px;color:#374151;line-height:1.65;margin:0">ヨーグルトメーカーがあれば塩麹（米麹+塩+水）を60℃×8時間で完成できます。甘酒（米麹+炊いたごはん+お湯）も同様に作れます。どちらも調理用途が広く、料理のレパートリーが広がります。</p>
+        </div>
+      </div>
+      <div style="background:#fdf4ff;border-radius:8px;padding:10px 12px;display:flex;gap:10px;align-items:flex-start">
+        <span style="font-size:18px;min-width:28px">③</span>
+        <div>
+          <p style="font-size:13px;font-weight:700;color:#6b21a8;margin:0 0 3px">ぬか床に挑戦（継続型発酵）</p>
+          <p style="font-size:12px;color:#374151;line-height:1.65;margin:0">ぬか床は一度作れば何年も使い続けられる継続型発酵食品です。市販の「初めてのぬか床セット」を使えば手軽に始められます。毎日かき混ぜる必要がありますが、野菜を入れるだけで翌日にぬか漬けが完成します。本ツールで漬け時間を管理すれば漬けすぎを防げます。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HEALTH BENEFITS -->
+<section class="container" style="padding:0 16px 20px">
+  <div style="background:#fff;border-radius:12px;padding:14px 18px;box-shadow:0 2px 12px rgba(0,0,0,.06)">
+    <h2 style="font-size:15px;font-weight:700;color:#333;margin-bottom:10px">🌿 発酵食品の健康効果と日常への取り入れ方</h2>
+    <p style="font-size:13px;color:#374151;line-height:1.75;margin-bottom:8px">発酵食品は腸内環境を整える乳酸菌・酵母・麹菌などを豊富に含んでいます。近年の研究では腸内フローラ（腸内細菌叢）の多様性が免疫機能・メンタルヘルス・代謝に関わることが示されており、日常的な発酵食品の摂取が注目されています。</p>
+    <ul style="font-size:13px;color:#374151;line-height:2;margin:0 0 8px;padding-left:16px">
+      <li><strong>ヨーグルト</strong>：乳酸菌がカルシウム吸収を助け、腸内環境を整える</li>
+      <li><strong>ぬか漬け</strong>：ビタミンB群・乳酸菌が豊富。少量で食物繊維も摂れる</li>
+      <li><strong>甘酒（米麹）</strong>：ブドウ糖・アミノ酸・ビタミンB群が豊富で「飲む点滴」とも呼ばれる</li>
+      <li><strong>塩麹</strong>：食材の旨味を引き出しつつ、消化酵素で胃腸の負担を軽減</li>
+    </ul>
+    <p style="font-size:12px;color:#6b7280;line-height:1.65">※上記は一般的に言われる情報です。特定の疾患がある方は医師にご相談ください。</p>
+  </div>
 </section>
 
 <!-- RELATED -->
